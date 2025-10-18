@@ -1,0 +1,309 @@
+/* 🌟 Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌟 Body */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #17313E, #415E72);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🌟 Header */
+header {
+    background: linear-gradient(135deg, #17313E, #415E72);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* 🌟 Navigation */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+header button {
+    border-radius: 25px;
+    border: none;
+    background:  #F3E2D4;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+header button:hover {
+    background: black;
+    color: gold;
+    border: 2px solid gold;
+    transform: scale(1.05);
+}
+header button a {
+    color: black;
+    text-decoration: none;
+}
+header button a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/* 🌟 Hamburger Icon */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon.open i {
+    color: gold;
+    transform: rotate(90deg);
+}
+
+/* 🌟 Login Section */
+.login {
+    /* background:  #ffffff; */
+    background:  #00000040;
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    margin: 100px auto;
+    box-shadow: 0 8px 20px gold;
+    text-align: center;
+    height: auto;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    background: linear-gradient(90deg, gold, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.login form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    /* transition: all 0.3s ease; */
+}
+
+.login form input:hover {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+}
+
+.login form button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background:  #F3E2D4;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px gold;
+    background-color: #111;
+    color: white;
+}
+.login form a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+}
+.login form a:hover{
+    color: gold;
+}
+.login p{
+    margin-top: 20px;
+}
+
+/* Register Section */
+
+.Register {
+    background: linear-gradient(145deg, #555, #111);
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    margin: 100px auto;
+    box-shadow: 0 8px 20px gold;
+    text-align: center;
+    height: auto;
+}
+
+.Register h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    background: linear-gradient(90deg, gold, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.Register form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    /* transition: all 0.3s ease; */
+}
+
+.Register form input:hover {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+}
+
+.Register form button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, yellow, green, blue, red);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Register form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px gold;
+}
+.Register form a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+}
+.Register form a:hover{
+    color: gold;
+}
+.Register p{
+    margin-top: 20px;
+}
+
+
+/* 🌟 Footer */
+footer {
+    background: linear-gradient(90deg, #2e2e2e, #4a4a4a);
+    color: gold;
+    text-align: center;
+    padding: 12px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* 🌟 Responsive Menu */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 25px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(160deg, #3a3a3a, #1a1a1a);
+        position: absolute;
+        top: 65px;
+        right: 15px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="login">
+    <h2>Login</h2>
+    <form method="post" action="{% url 'admin_panel:dashboard' %}">
+        {% csrf_token %}
+        {% if messages %}
+            {% for message in messages %}
+                <p class="message {{ message.tags }}">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <a href="">Forgot your password</a>
+        <button type="submit">Login</button>
+    </form>
+</div>
+{% endblock%}
